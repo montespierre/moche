@@ -17,4 +17,8 @@ public class EmpleadoService {
 	public List<Empleado> traerTodos(){
 		return (List<Empleado>) empleadoRepository.findAll();
 	}
+	
+	public List<Empleado> traerPorNomEmp(String nomEmp){
+		return empleadoRepository.findByNomEmpContainingIgnoreCase(nomEmp);
+	}
 }
