@@ -1,5 +1,3 @@
-create database d6b891bdsbvnn6;
-
 create table empleados
 (
 	idEmpleado int(11) not null
