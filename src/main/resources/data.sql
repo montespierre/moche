@@ -1,11 +1,12 @@
 DROP TABLE IF EXISTS empleados;
-create table empleados(
+CREATE TABLE empleados(
 	idEmpleado SERIAL PRIMARY KEY,
-	nomEmp varchar(50),
-	puestoEmp varchar(50),
-	telEmp int(11)
-);
+	nomEmp VARCHAR(50),
+	puestoEmp VARCHAR(50),
+	telEmp INTEGER
+	);
 
-insert into empleados(nomEmp ,puestoEmp , telEmp) 
-values('Juan','jefe','55450');
+INSERT INTO empleados(nomEmp ,puestoEmp , telEmp) values('Juan','jefe',55450);
+INSERT INTO empleados(nomEmp ,puestoEmp , telEmp) values('Juan','jefe',55450);
+INSERT INTO empleados(nomEmp ,puestoEmp , telEmp) values('Juan','jefe',55450);
 
