@@ -1,6 +1,5 @@
 DROP TABLE IF EXISTS empleados;
-create table empleados
-(
+create table empleados(
 	idEmpleado SERIAL PRIMARY KEY,
 	nomEmp varchar(50),
 	puestoEmp varchar(50),
