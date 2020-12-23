@@ -16,7 +16,7 @@ public class Empleado implements Serializable{
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = -5151615L;
+	private static final long serialVersionUID = 1L;
 
 	@Id
 	@Column(name="idEmpleado")
