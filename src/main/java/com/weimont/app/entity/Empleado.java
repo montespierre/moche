@@ -2,6 +2,8 @@ package com.weimont.app.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -11,6 +13,7 @@ public class Empleado {
 
 	@Id
 	@Column(name="idEmpleado")
+	@GeneratedValue(strategy= GenerationType.AUTO)
 	private Long idEmpleado;
 	
 	@Column(name="nomEmp")
