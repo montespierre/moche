@@ -1,5 +1,7 @@
 package com.weimont.app.entity;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,7 +11,12 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="empleados")
-public class Empleado {
+public class Empleado implements Serializable{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -5151615L;
 
 	@Id
 	@Column(name="idEmpleado")
