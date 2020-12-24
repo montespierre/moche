@@ -1,6 +1,7 @@
 package com.weimont.app.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,5 +21,9 @@ public class EmpleadoService {
 	
 	public List<Empleado> traerPorNomEmp(String nomEmp){
 		return empleadoRepository.findByNomEmpContainingIgnoreCase(nomEmp);
+	}
+	
+	public Optional<Empleado> traerPorId(Long id){
+		return empleadoRepository.findById(id);
 	}
 }
