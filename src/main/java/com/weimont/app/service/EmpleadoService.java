@@ -26,4 +26,8 @@ public class EmpleadoService {
 	public Optional<Empleado> traerPorId(Long id){
 		return empleadoRepository.findById(id);
 	}
+	
+	public Empleado crear(Empleado empleado){
+		return empleadoRepository.save(empleado);
+	}
 }
