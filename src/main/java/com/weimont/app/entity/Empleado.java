@@ -26,6 +26,17 @@ public class Empleado {
 		// TODO Auto-generated constructor stub
 	}
 	
+	
+
+	public Empleado(Long idEmpleado, String nomEmp, String puestoEmp, Long telEmp) {
+		super();
+		this.idEmpleado = idEmpleado;
+		this.nomEmp = nomEmp;
+		this.puestoEmp = puestoEmp;
+		this.telEmp = telEmp;
+	}
+
+
 
 	public Long getIdEmpleado() {
 		return idEmpleado;
