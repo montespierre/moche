@@ -19,6 +19,9 @@ public class MocheApplication {
 	ApplicationRunner applicationRunner(EmpleadoRepository empleadoRepository) {
 		return args -> {
 			empleadoRepository.save(new Empleado((long) 1, "Carlos Valderrama", "Vendedor", (long) 15155));
+			empleadoRepository.save(new Empleado((long) 2, "Diego Maradona", "Vendedor", (long) 2111));
+			empleadoRepository.save(new Empleado((long) 3, "Flavio Maestri", "Vendedor", (long) 54566));
+			empleadoRepository.save(new Empleado((long) 4, "Checho Ibarra", "Vendedor", (long) 788787));
 		};
 	}
 
